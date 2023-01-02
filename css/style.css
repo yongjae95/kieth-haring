@@ -1,0 +1,770 @@
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    vertical-align: top;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    position: relative;
+}
+
+
+/*헤더*/
+
+
+header{
+    width: 1200px;
+    height: 150px;
+    position: relative;
+}
+.header_logo{
+    width: 250px;
+    margin-top: 37.5px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+.header_menu{
+    width: 750px;
+    height: 150px;
+    float: left;
+    position: absolute;
+    font-family: 'KOTRAHOPE';
+    right: 0;
+
+}
+.header_menu_list{
+    width: 750px;
+    height: 50px;
+    margin-top: 50px;
+    float: right;
+}
+.header_menu_list>li{
+    float: left;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.header_menu_list>li>a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+/*    font-weight: bold;*/
+}
+.header_menu_list>li:first-child:hover{
+    background-color: rgb(243,112,100);
+    color: white;
+}
+.header_menu_list>li:nth-child(2):hover{
+    background-color: rgb(214,167,35);
+    color: white;
+}
+.header_menu_list>li:nth-child(3):hover{
+    background-color: rgb(99,184,122);
+    color: white;
+}
+.header_menu_list>li:nth-child(4):hover{
+    background-color: rgb(102,165,218);
+    color: white;
+}
+.header_menu_list>li:nth-child(5):hover{
+    background-color: rgb(200,101,167);
+    color: white;
+}
+.sub_menu_list{
+    display: none;
+    z-index: 99;
+    position: absolute;
+    width: 150px;
+}
+.sub_menu_list li{
+    height: 40px;
+    background-color: gray;
+    line-height: 40px;
+    color: white;
+}
+.sub_menu_list li:hover{
+    background-color: black;
+}
+
+
+/*메인 슬라이드*/
+
+
+.second{
+    width: 100%;
+    height: 600px;
+}
+.imgslide{
+    width:1200px;
+    height:600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_list li{
+    width:1200px;
+    height:600px;
+    float: left;
+    position: relative;
+}
+
+.img_list li h3 span{
+    width:500px;
+    height:100px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    color:white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 25pt;
+    font-weight: lighter;
+}
+
+.img_list li h3{
+    width:500px;
+    height:100px;
+    position: absolute;
+    bottom:12%;
+    left: 30%;
+    color:white;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15pt;
+    padding-top: 15px;
+    font-weight: lighter;
+    
+}
+.img_list li h4{
+    width:800px;
+    height:100px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    margin: 0 auto;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20pt;
+}
+
+.img_list li p{
+    width:800px;
+    height:100px;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    color:#fff;
+    text-align: center;
+    font-size: 15pt;
+}
+
+
+.img_list{
+    width:3600px;
+    height:600px;
+    position: absolute;
+}
+.slide_human{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:55%;
+    left:50%;
+    border-radius: 100%;
+    border: 10px solid white;
+    transform: translate(-50%,-90%);
+}
+.slide_arrow a{
+    width:40px;
+    height:60px;
+    position: absolute;
+    z-index: 99999;
+    background-image: url(../images/arrow/arrow_left.png);
+    background-repeat: no-repeat;
+    top:49%;
+    margin: 0px 10px 0px 10px;
+    opacity: 0.6;
+   
+}
+.slide_arrow .right{
+    right:0;
+    transform: scaleX(-1);
+    opacity: 0.6;
+} 
+
+/*아이콘들*/
+
+
+.third{
+    width: 100%;
+    height: 295px;
+}
+.behind_slide{
+    width:800px;
+    height:300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.behind_slide li{
+    width:185px;
+    height:215px;
+    float: left;
+    position: relative;
+    margin: 42.5px 20px 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.behind_slide li:last-child{
+    margin-right: 0;
+}
+.behind_slide li img{
+    width:70%;
+    height:60%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.behind1{
+    background-image: url(../images/icon/icon01.png);
+}
+.behind1:hover{
+    background-image: url(../images/icon/icon01_h.png);
+}
+.behind2{
+    background-image: url(../images/icon/icon02.png);
+}
+.behind2:hover{
+    background-image: url(../images/icon/icon02_h.png);
+}
+.behind3{
+    background-image: url(../images/icon/icon03.png);
+}
+.behind3:hover{
+    background-image: url(../images/icon/icon03_h.png);
+}
+.behind4{
+    background-image: url(../images/icon/icon04.png);
+}
+.behind4:hover{
+    background-image: url(../images/icon/icon04_h.png);
+}
+
+/*퀵메뉴*/
+
+
+.quick{
+    width: 80px;
+    height: 320px;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    z-index: 99999;
+    color:white;
+    font-weight: bold;
+    font-size:15pt;
+    
+}
+.quick img{
+    width: 70px;
+    margin: 5px; 
+    float: left;
+}
+.quick h7{
+    width:200px;
+    height:80px;
+    float:left;
+    line-height: 80px;
+    transform: translateX(5%);
+    font-family: 'KOTRAHOPE';
+    font-weight: lighter;
+}
+.quick a{
+    display: block;
+    width: 400%;
+    height: 80px;
+    transition: 1s;
+    
+}
+.quick a.q1{
+    background-color: white;
+}
+.quick a.q2{
+    background-color: white;
+}
+.quick a.q3{
+    background-color: white;
+}
+.quick a.q4{
+    background-color: white;
+}
+
+.quick a.q1:hover{
+    background-color: #2aa9e0;
+}
+.quick a.q2:hover{
+    background-color: #385599;
+}
+.quick a.q3:hover{
+    background-color: #f60100;
+}
+.quick a.q4:hover{
+    background-color: #d83563;
+}
+.quick a:hover{
+    margin-left: -130%;
+}
+
+/*대표작 소개*/
+
+
+.forth{
+    width: 100%;
+    height: 500px;
+    background-color: coral;
+}
+.img_slide{
+    margin: 0 auto;
+    width:800px;
+    height:500px;
+    position: relative;
+}
+.total_img_slide{
+   width:1200px;
+    height:500px;
+    background-color: black;
+}
+.main{
+    width:600px;
+    height:500px;
+    padding:10px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+.main img{
+    width:100%;
+    height:100%;
+}
+.title{
+    position: absolute;
+    width:600px;
+    height:125px;
+    background-color: rgba(0,0,0,0.8);
+    bottom:0;
+    color:white;
+    padding:10px;
+    box-sizing: border-box;
+}
+.first_title{
+    font-size: 17pt;
+    width:100px;
+    height:100px;
+    z-index: 9999999;
+/*    font-weight: bold;*/
+}
+.second_title{
+    position: absolute;
+    font-size: 9pt;
+    top:63%;
+    font-weight: 200;
+    
+}
+.third_title{
+    position: absolute;
+    font-size: 12pt;
+    top:37%;
+/*    font-weight: bold;*/
+    
+}
+
+.sub_list_second{
+    width: 200px;
+    height: 500px;
+    background-color: aquamarine;
+    position: absolute;
+    float: left;
+    right: 0;
+    cursor: pointer;
+}
+.sub_list_second li{
+    width:100px;
+    height:125px;
+    float: left;
+    padding:5px;
+    position: relative;
+    box-sizing: border-box;
+}
+.sub_list_second li h2{
+    display: none;
+}
+.sub_list_second li p{
+    display: none;
+}
+
+.sub_list_second li img{
+    width:80%;
+    height:60%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.sub_list_second li:first-child{
+    background-color: #ed1958;
+}
+.sub_list_second li:nth-child(2){
+    background-color: black;
+}
+.sub_list_second li:nth-child(3){
+    background-color: black;
+}
+.sub_list_second li:nth-child(4){
+    background-color:#ee2e23;
+}
+.sub_list_second li:nth-child(5){
+    background-color: #9c1b1f;
+}
+.sub_list_second li:nth-child(6){
+    background-color: black;
+}
+.sub_list_second li:nth-child(7){
+    background-color: black;
+}
+.sub_list_second li:nth-child(8){
+    background-color: #ed1c24;
+}
+
+.sub_list_second li img.big{
+    width:100%;
+    height:80%;
+}
+
+
+/*여백의 미*/
+
+.fifth{
+    width: 100%;
+    height: 235px;
+}
+.empty{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 235px;
+    text-align: center;
+}
+
+.empty .empty{
+    width: 225px;
+    position: absolute;
+    height: 185px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.empty .logo{
+    width: 170px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+/*전시회&일정*/
+
+.sixth{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+.show_title{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+}
+.show_title p{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+/*    font-weight: bold;*/
+}
+
+/*도서구매*/
+
+.seventh{
+    width: 100%;
+    height: 550px;
+}
+.book{
+    margin: 0 auto;
+    width: 800px;
+    position: relative;
+    top: 90px;
+}
+.book_text{
+/*    font-weight: bolder;*/
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+/*    font-weight: bold;*/
+}
+
+.book_list_left{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    border: 3px solid #7c7c7c;
+}
+
+.book_list_left:hover{
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid #7c7c7c;
+}
+
+.book_list_right{
+    position: absolute;
+    right: 0;
+    width: 480px;
+    height: 300px;
+}
+
+.book_list_right li{
+    width: 228px;
+    height: 140px;
+    border: 3px solid #7c7c7c;
+    margin-bottom: 13px;
+    float: left;
+    margin-left: 8px;
+}
+
+.book_list_right li:hover{
+    background-color: rgba(0,0,0,0.4);
+    border: 3px solid #7c7c7c;
+}
+
+.book_list_right li:first-child{
+    margin-left: 0;
+}
+
+.book_list_right li:nth-child(3){
+    margin-left: 0;
+}
+.book_list_left li p{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    bottom: 0;
+    position: absolute;
+    color: rgba(0,0,0,0);
+}
+
+.book_list_left li p:hover{
+    background-color: #5d5d5d;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+}
+
+.book_list_right li{
+    position: relative;
+}
+
+.book_list_right li p{
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0,0,0,0);
+    position: absolute;
+    bottom: 0;
+}
+
+.book_list_right li p:hover{
+    background-color: #5d5d5d;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+.book_list_left:hover::after{
+    display: block;
+    content: "키스 해링 LOVE, BABIES 세트(전2권)";
+    position: absolute;
+    bottom: -1px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color:#5d5d5d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.txt1:hover::after{
+    display: block;
+    content: "키스해링 러브(LOVE)";
+    position: absolute;
+    bottom: -1px;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color:#5d5d5d;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.txt2:hover::after{
+    display: block;
+    content: "키스 해링 베이비(BABIES)";
+    position: absolute;
+    bottom: -1px;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color:#5d5d5d;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.txt3:hover::after{
+    display: block;
+    content: "키스 해링 컬러링 북";
+    position: absolute;
+    bottom: -1px;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color:#5d5d5d;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.txt4:hover::after{
+    display: block;
+    content: "키스 해링 저널";
+    position: absolute;
+    bottom: -1px;
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color:#5d5d5d;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.font{
+    font-family: 'KOTRAHOPE';
+    font-size: 25px;
+/*    font-weight: bold;*/
+}
+#book_title{
+    font-size: 35px;
+}
+
+
+
+
+/*푸터*/
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #6D6E70;
+    color: white;
+    position: absolute;
+    left: 0;
+    background-image: url(../images/bg/bg_footer.png);
+    background-size: cover;
+    opacity: 0.8;
+}
+.footer_logo{
+    width: 250px;
+    margin-top: 37.5px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+.empty_box{
+    width: 326px;
+    height: 75px;
+    float: left;
+    margin: 37.5px 10px 0 10px;
+    border-bottom: 3px solid white;
+}
+.footer_txt{
+    width: 600px;
+    height: 82.5px;
+    float: right;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+.footer_txt p{
+    margin-top: 3px;
+}
+.footer_info{
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
